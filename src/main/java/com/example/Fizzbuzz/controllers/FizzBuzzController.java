@@ -17,7 +17,7 @@ public class FizzBuzzController {
     @Autowired
     FizzBuzzService fizzBuzzService;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/fizz-buzz", method = RequestMethod.GET)
     public ResponseEntity getFizzBuzz(@RequestParam(value = "input") int input){
         if(input <= 0){
             Map<String,String> error = new HashMap<>();
